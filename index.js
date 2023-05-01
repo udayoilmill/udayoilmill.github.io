@@ -10,7 +10,7 @@ var Countdown = {
 
     // Initialize the countdown  
     init: function() {
-        var countDownDate = new Date("May 1, 2023 15:37:25").getTime();
+        var countDownDate = new Date("May 6, 2023 15:37:25").getTime();
         var now = new Date().getTime();
 
         // Find the distance between now an the count down date
