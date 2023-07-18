@@ -2,305 +2,430 @@
 <html>
 
 <head>
-    <title>Uday Oil Mill - Coming Soon!</title>
+    <title>Uday Oil Mill</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to Uday Oil Mill, a leading oil mill based in Kadi, Mehsana, Gujarat, India. We specialize in the production of high-quality cotton seed oil and cotton seed oil cake, which is widely used as nutritious cattle feed. Explore our range of products and discover how our expertise and commitment to quality make us a trusted choice in the industry.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="images/favicon-144x144.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="assets/favicon/favicon-144x144.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        body {
-            background-color: #f2f1ed;
-            background-image: url("https://images.unsplash.com/photo-1633527992904-53f86f81a23a");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        
-        .wrap {
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            height: 310px;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #1a1a1a;
-        }
-        
-        h1 {
-            margin-bottom: 60px;
-            text-align: center;
-            font: 300 2.25em "Lato";
-            text-transform: uppercase;
-        }
-        
-        h1 strong {
-            font-weight: 400;
-            color: #ea4c4c;
-        }
-        
-        h2 {
-            margin-bottom: 80px;
-            text-align: center;
-            font: 300 0.7em "Lato";
-            text-transform: uppercase;
-        }
-        
-        h2 strong {
-            font-weight: 400;
-        }
-        
-        .countdown {
-            width: 720px;
-            margin: 0 auto;
-        }
-        
-        .countdown .bloc-time {
-            float: left;
-            margin-right: 45px;
-            text-align: center;
-        }
-        
-        .countdown .bloc-time:last-child {
-            margin-right: 0;
-        }
-        
-        .countdown .count-title {
-            display: block;
-            margin-bottom: 15px;
-            font: normal 0.94em "Lato";
-            color: #1a1a1a;
-            text-transform: uppercase;
-        }
-        
-        .countdown .figure {
-            position: relative;
-            float: left;
-            height: 110px;
-            width: 100px;
-            margin-right: 10px;
-            background-color: #000;
-            border-radius: 8px;
-            -moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08);
-            -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08);
-            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), inset 2px 4px 0 0 rgba(255, 255, 255, 0.08);
-        }
-        
-        .countdown .figure:last-child {
-            margin-right: 0;
-        }
-        
-        .countdown .figure>span {
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-            font: normal 5.94em/107px "Lato";
-            font-weight: 700;
-            color: #de4848;
-        }
-        
-        .countdown .figure .top:after,
-        .countdown .figure .bottom-back:after {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        
-        .countdown .figure .top {
-            z-index: 3;
-            background-color: #000;
-            transform-origin: 50% 100%;
-            -webkit-transform-origin: 50% 100%;
-            -moz-border-radius-topleft: 10px;
-            -webkit-border-top-left-radius: 10px;
-            border-top-left-radius: 10px;
-            -moz-border-radius-topright: 10px;
-            -webkit-border-top-right-radius: 10px;
-            border-top-right-radius: 10px;
-            -moz-transform: perspective(200px);
-            -ms-transform: perspective(200px);
-            -webkit-transform: perspective(200px);
-            transform: perspective(200px);
-        }
-        
-        .countdown .figure .bottom {
-            z-index: 1;
-        }
-        
-        .countdown .figure .bottom:before {
-            content: "";
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50%;
-            background-color: rgba(0, 0, 0, 0.02);
-        }
-        
-        .countdown .figure .bottom-back {
-            z-index: 2;
-            top: 0;
-            height: 50%;
-            overflow: hidden;
-            background-color: #000;
-            -moz-border-radius-topleft: 10px;
-            -webkit-border-top-left-radius: 10px;
-            border-top-left-radius: 10px;
-            -moz-border-radius-topright: 10px;
-            -webkit-border-top-right-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        
-        .countdown .figure .bottom-back span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        
-        .countdown .figure .top,
-        .countdown .figure .top-back {
-            height: 50%;
-            overflow: hidden;
-            -moz-backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-        
-        .countdown .figure .top-back {
-            z-index: 4;
-            bottom: 0;
-            background-color: #000;
-            -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-            -moz-transform: perspective(200px) rotateX(180deg);
-            -ms-transform: perspective(200px) rotateX(180deg);
-            -webkit-transform: perspective(200px) rotateX(180deg);
-            transform: perspective(200px) rotateX(180deg);
-            -moz-border-radius-bottomleft: 10px;
-            -webkit-border-bottom-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-            -moz-border-radius-bottomright: 10px;
-            -webkit-border-bottom-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        
-        .countdown .figure .top-back span {
-            position: absolute;
-            top: -100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-    </style>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Main styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
-    <div>
-        <div class="wrap">
-            <h1> We'll be here <strong>Soon</strong></h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-            <div class="countdown">
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.svg" alt="uday oil mill logo">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
 
-                <div class="bloc-time hours" data-init-value="72">
-                    <span class="count-title">Hours</span>
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle text-uppercase">Uday Oil Mill</h1>
+            <br/>
+            <h2 class="subtitle">Pioneering Sustainable Solutions for a Healthier World</h2>
+        </div>
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </header>
+    <!-- End Of Page Header -->
 
-                    <div class="figure hours hours-1">
-                        <span class="top">2</span>
-                        <span class="top-back">
-             <span>2</span>
-                        </span>
-                        <span class="bottom">2</span>
-                        <span class="bottom-back">
-             <span>2</span>
-                        </span>
-                    </div>
+    <!-- Service Section -->
+    <section id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">Our Service</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">Voluptates architecto provident deserunt.</h6>
 
-                    <div class="figure hours hours-2">
-                        <span class="top">4</span>
-                        <span class="top-back">
-             <span>4</span>
-                        </span>
-                        <span class="bottom">4</span>
-                        <span class="bottom-back">
-             <span>4</span>
-                        </span>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">01</small>
+                            <h5 class="card-title mt-3"> Beatae quo
+                                <h5>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bloc-time min" data-init-value="0">
-                    <span class="count-title">Minutes</span>
-
-                    <div class="figure min min-1">
-                        <span class="top">0</span>
-                        <span class="top-back">
-             <span>0</span>
-                        </span>
-                        <span class="bottom">0</span>
-                        <span class="bottom-back">
-             <span>0</span>
-                        </span>
-                    </div>
-
-                    <div class="figure min min-2">
-                        <span class="top">0</span>
-                        <span class="top-back">
-             <span>0</span>
-                        </span>
-                        <span class="bottom">0</span>
-                        <span class="bottom-back">
-             <span>0</span>
-                        </span>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">Delectus Suscipit
+                                <h5>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bloc-time sec" data-init-value="0">
-                    <span class="count-title">Seconds</span>
-
-                    <div class="figure sec sec-1">
-                        <span class="top">0</span>
-                        <span class="top-back">
-             <span>0</span>
-                        </span>
-                        <span class="bottom">0</span>
-                        <span class="bottom-back">
-             <span>0</span>
-                        </span>
-                    </div>
-
-                    <div class="figure sec sec-2">
-                        <span class="top">0</span>
-                        <span class="top-back">
-             <span>0</span>
-                        </span>
-                        <span class="bottom">0</span>
-                        <span class="bottom-back">
-             <span>0</span>
-                        </span>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3">Itaque harum
+                                <h5>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="index.js"></script>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">About Company</h6>
+                    <!-- <h6 class="section-subtitle mb-4">Architecto provident deserunt</h6> -->
+                    <p>Established in 2005, Uday Oil Mill has become a leading manufacturer and supplier of high-quality cotton seed oil cake and cotton seed oil products. We are dedicated to providing our customers with the best possible products and service
+                        while prioritizing sustainability and environmental responsibility.</p>
+                    <img src="assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/imgs/about-2.jpeg" alt="latest technology" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>At Uday Oil Mill, we use the latest technology and manufacturing processes to ensure that our products are of the highest quality and purity. Our team of experienced professionals is passionate about what they do and works
+                                tirelessly to ensure that our customers receive the best possible products and service.</p>
+                            <p><b>We offer a wide range of products, including cotton seed oil cake and cotton seed oil, which are available in bulk quantities for commercial use.</b><br>
+                            </p>
+                            <p>We take pride in our commitment to quality, sustainability, and customer satisfaction. We are constantly striving to improve our products and processes to better serve our customers, and we believe that our dedication to excellence
+                                sets us apart from our competitors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Our Products</h6>
+            <h6 class="section-subtitle mb-5 text-center">Welcome to our company's website, where we offer high-quality cotton seed oil cake and cotton seed oil products.
+                <br/> Our manufacturing process is state-of-the-art, ensuring that our products are of the highest quality and purity.
+                <br/> At our company, we take pride in our commitment to quality and sustainability.
+                <br /> We use eco-friendly practices in our manufacturing process, ensuring that our products are environmentally responsible.
+                <br /> Our products are available in bulk quantities for commercial use, and we also offer custom packaging options for retail customers.
+            </h6>
+            <div class="filters">
+                <a href="#" data-filter=".cake" class="active">
+                    Cotton Seed Oil Cake
+                </a>
+                <a href="#" data-filter=".oil">
+                    Cotton Seed Oil
+                </a>
+            </div>
+            <div class="portfolio-container">
+                <div class="col-md-6 col-lg-4 cake">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/brand.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/brand.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title text-uppercase">Usage</h6>
+                                <p class="subtitle">These product is best used for cattle feed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 cake">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/cake-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/cake-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title text-uppercase">quality</h6>
+                                <p class="subtitle">The gamut of cottonseed oil cake offered by us is excellent in quality by its thickness as it contains more protein and oil which is known as Uma Brand in Domestic market.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 cake">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/cake-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/cake-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CHARACTERISTICS</h6>
+                                <p class="subtitle">OIL : 6 − 6.5 % <br/> PROTEIN : 22 % <br/> SILICA : 3 %</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 oil">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/oil-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/oil-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title text-uppercase">Usage</h6>
+                                <p class="subtitle">These product is used in food production and cosmetics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 oil">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/oil-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/oil-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title text-uppercase">quality</h6>
+                                <p class="subtitle">We use only the best quality cotton seeds that are carefully selected and processed to preserve the natural flavor, aroma, and nutritional value of the oil.Our cotton seed oil is also naturally rich in antioxidants and
+                                    other nutrients that are beneficial for health.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 oil">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/oil-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/oil-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CHARACTERISTICS</h6>
+                                <p class="subtitle">FFA : 0.25% <br/> COLOUR : 35 Units<br/> MIV : 0.1 %</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-5 text-center">Latest Articles</h6>
+            <!-- <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6> -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-1.jpg" alt="Is Cottonseed Oil Good for Health?" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title">Is Cottonseed Oil Good for Health?</h6>
+                            <p>Cottonseed oil contains three types of fat: saturated fat (3.5 grams), Polyunsaturated fat (7 grams), and monounsaturated fat ...</p>
+                            <a href="https://manmatters.com/blog/cottonseed-oil/" target="_blank" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-2.jpg" alt="बिनौले के तेल के फायदे और उपयोग" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title">बिनौले के तेल के फायदे और उपयोग</h5>
+                                <p>बिनौले का तेल कब्ज में बहुत मददगार है। यह सामान्य लोगों के अलावा गर्भवती महिलाओं को होने वाली कब्ज में आराम दिलाता है। डॉ. राहुल चतुर्वेदी ...</p>
+                                <a href="https://www.onlymyhealth.com/cottonseed-oil-benefits-uses-and-side-effects-in-hindi-1623398603" target="_blank" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h6 class="card-title">Cottonseed cake as a source of by-pass protein for dairy cows</h6>
+                            <p>Cottonseed cake is used as a protein supplement and can replace soybean ...</p>
+                            <a href="https://dellait.com/cottonseed-cake-as-a-source-of-by-pass-protein-for-dairy-cows/" target="_blank" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">Testmonials</h6>
+            <h6 class="section-subtitle mb-5 text-center">What Our Clients Says</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="farmer avatar">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Ramesh thakor</h6>
+                                    <small class="text-muted mb-0">Farmer</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Exceptional quality cotton seed oil cake at an affordable price.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Chaganbhai patel</h6>
+                                    <small class="text-muted mb-0">Trader and Dealer</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">Since 2015, we have been doing business with Uday Oil Mill, and as of yet, we have not come across a single complaint about their goods or services, which encourages us to keep our connections and expand our business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="chef avatar">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Bharatbhai prajapati</h6>
+                                    <small class="text-muted mb-0">Chef</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">I highly recommend this cotton seed oil manufacturer for their superior quality oil that enhances the flavor of every dish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <div class="container">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d916.1109985595598!2d72.31124979153107!3d23.29964435902866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snear%20railway%20bridge%20detroj%20road%20kadi!5e0!3m2!1sen!2sin!4v1683028746765!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+        </div>
+    </section>
+    <!-- End of Location Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Phone</h6>
+                    <p class="mb-0">Mr. Raju Gajjar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mr. Narendra Gajjar </p>
+                    <p class="mb-4">+91 987-954-2057 &nbsp;&nbsp;&nbsp;&nbsp;+91 987-956-5011</p>
+
+                    <h6 class="mb-0">Address</h6>
+                    <p class="mb-4">Detroj Road,<br/>Near railway line, Kadi-382715 <br/>Gujarat,India</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">udayoilmill6766@gmail.com </p>
+                    <p class="mb-0 text-muted">Send us your query anytime!</p>
+                    <p></p>
+                </div>
+                <div class="col-md-7">
+                    <form method="post">
+                        <h4 class="mb-4">SEND US MESSAGE</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" id="name" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" id="Email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="text" id="subject" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <select id="product" class="form-control text-white rounded-0 bg-transparent" name="product" placeholder="product" required>
+                                    <option class="text-black-50">Cotton seed oil</option>
+                                    <option class="text-black-50">Cotton seed oil cake</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea id="message" name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <button type="button" class="btn btn-primary rounded w-md mt-3" onclick="sendEmail()">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> All rights reserved </p>
+            </footer>
+            <!-- End of Page Footer -->
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Mail Service -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
