@@ -47,6 +47,16 @@ function sendEmail() {
     let subject = document.getElementById("subject").value;
     let product = document.getElementById("product").value;
     let message = document.getElementById("message").value;
+    if (name === "" || mail === "" || subject === "" || product === "" || message === "") {
+        return;
+    }
+
+    // Email validation using a regular expression
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(mail)) {
+        return;
+    }
+
     let body = `<p>Name : ` + name + `
       <br/>Mail : ` + mail + `
       <br/>Subject : ` + subject + `
